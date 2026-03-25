@@ -1,0 +1,137 @@
+.section {
+  background: var(--ink-mid);
+  padding: 88px 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 520px;
+  overflow: hidden;
+  border-radius: var(--r-xl);
+  box-shadow: var(--shadow-heavy);
+}
+
+
+.visual {
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+}
+.visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+.card:hover .visual img {
+  transform: scale(1.04);
+}
+.visualOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10,62,85,0.4), rgba(10,18,40,0.15));
+}
+.badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: var(--coral);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+
+.content {
+  background: var(--ink-mid);
+  padding: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--coral-light);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 46px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.desc {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.8;
+}
+
+.meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.metaItem strong {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+.metaItem span {
+  font-size: 12px;
+  color: var(--fog);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rating span {
+  font-size: 13px;
+  color: var(--fog);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width: 1024px) {
+  .card    { grid-template-columns: 1fr; }
+  .content { padding: 40px; }
+}
+
+@media (max-width: 768px) {
+  .section  { padding: 64px 0; }
+  .content  { padding: 32px 24px; }
+  .name     { font-size: 36px; }
+}
