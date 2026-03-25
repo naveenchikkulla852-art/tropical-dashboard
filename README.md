@@ -1,95 +1,10 @@
-# 🌴 Tropique — Tropical Destinations Dashboard
+#  Tropique — Tropical Destinations Dashboard
 
 A responsive, production-grade Tropical Destinations Dashboard built with **Vite + React**.
 
 ---
 
-## 🚀 Quick Start
-
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Start dev server
-npm run dev
-
-# 3. Open in browser
-# http://localhost:5173
-```
-
----
-
-## 📦 Build for Production
-
-```bash
-npm run build    # outputs to /dist
-npm run preview  # preview the production build locally
-```
-
----
-
-## 🗂️ Project Structure
-
-```
-tropique/
-├── index.html                        # HTML entry point
-├── vite.config.js                    # Vite configuration
-├── package.json
-└── src/
-    ├── main.jsx                      # ReactDOM root + BrowserRouter
-    ├── App.jsx                       # Routes + layout shell
-    ├── pages/
-    │   └── Home.jsx                  # Home page (assembles all sections)
-    ├── components/
-    │   ├── Navbar/
-    │   │   ├── Navbar.jsx            # Fixed nav, hamburger, scroll-state
-    │   │   └── Navbar.module.css
-    │   ├── Hero/
-    │   │   ├── Hero.jsx              # Full-screen hero with stats
-    │   │   └── Hero.module.css
-    │   ├── Featured/
-    │   │   ├── Featured.jsx          # Featured destination highlight
-    │   │   └── Featured.module.css
-    │   ├── Destinations/
-    │   │   ├── Destinations.jsx      # Section container (search + grid)
-    │   │   ├── Destinations.module.css
-    │   │   ├── DestinationCard.jsx   # Individual destination card
-    │   │   ├── DestinationCard.module.css
-    │   │   ├── FilterPills.jsx       # Category filter buttons
-    │   │   ├── FilterPills.module.css
-    │   │   ├── SearchBar.jsx         # Search input + result count
-    │   │   └── SearchBar.module.css
-    │   ├── Promo/
-    │   │   ├── Promo.jsx             # Student discount section
-    │   │   └── Promo.module.css
-    │   ├── Booking/
-    │   │   ├── Booking.jsx           # Section layout (info + form)
-    │   │   ├── Booking.module.css
-    │   │   ├── BookingForm.jsx       # Form with validation
-    │   │   └── BookingForm.module.css
-    │   ├── Footer/
-    │   │   ├── Footer.jsx
-    │   │   └── Footer.module.css
-    │   └── ui/                       # Shared/reusable components
-    │       ├── Stars.jsx             # Star rating display
-    │       ├── SkeletonCard.jsx      # Loading placeholder
-    │       └── SkeletonCard.module.css
-    ├── context/
-    │   ├── ToastContext.jsx          # Global toast notification context
-    │   └── ToastContext.module.css
-    ├── hooks/
-    │   ├── useDestinations.js        # API fetch + normalise + fallback
-    │   └── useScrolled.js           # Scroll position detection
-    ├── utils/
-    │   ├── constants.js             # API URL, fallback data, nav links
-    │   └── helpers.js               # Pure utility functions
-    └── styles/
-        └── global.css               # CSS variables, reset, shared classes
-```
-
----
-
-## ✅ Features
+##  Features
 
 ### Navigation
 - Fixed top navbar with Home, About, Schedule, Membership, Pricing
@@ -139,7 +54,7 @@ tropique/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -153,7 +68,7 @@ No extra UI libraries — pure React + CSS.
 
 ---
 
-## 🔌 API
+##  API
 
 - **Endpoint**: `https://nxtwave-assessments-backend-nxtwave-media-static.s3-ap-south-1.amazonaws.com/...`
 - Fetched in `useDestinations` custom hook using native `fetch`
@@ -162,7 +77,7 @@ No extra UI libraries — pure React + CSS.
 
 ---
 
-## 🌍 Deployment (Vercel)
+##  Deployment (Vercel)
 
 ```bash
 # Install Vercel CLI
@@ -171,7 +86,4 @@ npm i -g vercel
 # Deploy
 vercel
 
-# Follow prompts — Vite projects are auto-detected
-```
 
-Or connect your GitHub repo to [vercel.com](https://vercel.com) for automatic CI/CD.
